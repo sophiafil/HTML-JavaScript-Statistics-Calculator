@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Calculating Statistics</title>
+		<!--<link href="mySite.css" rel="stylesheet">-->
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h2 id="yellow">Statistical Calculator</h2>
+		<p>Enter 5 to 20 numbers (ranging from 0 to 100). Exactly one (1) space must separate each number</p>
+		<form onSubmit="event.preventDefault(); return performStatistics()">
+			<textarea name="numbers" id="numbers" rows="2" cols="50" required></textarea>
+			<br><br>
+			<input type="reset">
+			<input type="submit">
+			<br><br>
+			<div>
+				<label for="max">Max: </label>
+				<input type="text" name="max" id="max" readonly>
+			</div>
+			<br>
+			<div>
+				<label for="mean">Mean: </label>
+				<input type="text" name="mean" id="mean" readonly>
+			</div>
+			<br>
+			<div>
+				<label for="median">Median: </label>
+				<input type="text" name="median" id="median" readonly>
+			</div>
+			<br>
+			<div>
+				<label for="min">Min: </label>
+				<input type="text" name="min" id="min" readonly>
+			</div>
+			<br>
+			<div>
+				<label for="mode">Mode: </label>
+				<input type="text" name="mode" id="mode" readonly>
+			</div>
+			<br>
+			<div>
+				<label for="stdDev">Standard Deviation: </label>
+				<input type="text" name="stdDev" id="stdDev" readonly>
+			</div>
+			<br>
+			<div>
+				<label for="sum">Sum: </label>
+				<input type="text" name="sum" id="sum" readonly>
+			</div>
+			<br>
+			<div>
+				<label for="variance">Variance: </label>
+				<input type="text" name="variance" id="variance" readonly>
+			</div>
+		</form>
+	</body>
+</html>
